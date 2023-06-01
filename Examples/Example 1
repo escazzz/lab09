@@ -1,0 +1,17 @@
+#include <print.hpp>
+
+int main(int argc, char** argv)
+{
+  print("hello");
+}
+Example2
+
+#include <print.hpp>
+
+#include <fstream>
+
+int main(int argc, char** argv)
+{
+  std::ofstream file("log.txt");
+  print(std::string("hello"), file);
+}
